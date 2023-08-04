@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Scenario_9_Backend.API.props" />
+</Project>

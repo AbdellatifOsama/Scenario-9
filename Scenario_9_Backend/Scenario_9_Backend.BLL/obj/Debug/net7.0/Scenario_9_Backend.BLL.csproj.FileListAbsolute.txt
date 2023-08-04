@@ -1,0 +1,30 @@
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\bin\Debug\net7.0\Scenario_9_Backend.BLL.deps.json
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\bin\Debug\net7.0\Scenario_9_Backend.BLL.dll
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\bin\Debug\net7.0\Scenario_9_Backend.BLL.pdb
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\bin\Debug\net7.0\Scenario_9_Backend.DAL.dll
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\bin\Debug\net7.0\Scenario_9_Backend.DAL.pdb
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.csproj.AssemblyReference.cache
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.AssemblyInfoInputs.cache
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.AssemblyInfo.cs
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.csproj.CoreCompileInputs.cache
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.csproj.CopyComplete
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.dll
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\refint\Scenario_9_Backend.BLL.dll
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.pdb
+C:\Users\abdel\source\repos\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\ref\Scenario_9_Backend.BLL.dll
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\bin\Debug\net7.0\Scenario_9_Backend.BLL.deps.json
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\bin\Debug\net7.0\Scenario_9_Backend.BLL.dll
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\bin\Debug\net7.0\Scenario_9_Backend.BLL.pdb
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\bin\Debug\net7.0\Scenario_9_Backend.DAL.dll
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\bin\Debug\net7.0\Scenario_9_Backend.DAL.pdb
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.csproj.AssemblyReference.cache
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.AssemblyInfoInputs.cache
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.AssemblyInfo.cs
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.csproj.CoreCompileInputs.cache
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.csproj.CopyComplete
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.dll
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\refint\Scenario_9_Backend.BLL.dll
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\Scenario_9_Backend.BLL.pdb
+D:\Scenario 9 (Library)\Scenario_9_Backend\Scenario_9_Backend.BLL\obj\Debug\net7.0\ref\Scenario_9_Backend.BLL.dll

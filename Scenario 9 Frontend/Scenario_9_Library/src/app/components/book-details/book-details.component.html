@@ -1,0 +1,71 @@
+<div class="py-5 d-flex align-items-center justify-content-around bg-secondary-subtle">
+    <h2 class="fw-bolder">Book</h2>
+    <div>
+        <a class="text-decoration-none cursor-pointer text-secondary fw-semibold" routerLink="/home">Home / </a>
+        <a class="text-decoration-none cursor-pointer text-secondary fw-semibold" routerLink="/books">Books / </a>
+        <span class="fw-semibold">{{book?.title}}</span>
+    </div>
+</div>
+<div class="float w-50 mx-auto" *ngIf="isAddedSuccesfully">
+    <div class="my-2 text-center alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Item is Added Successfully You Will be Redirected to Books</strong>
+      </div>
+</div>
+<div class="container my-4">
+    <div class="row align-items-center">
+        <div class="col-md-6 col-lg-4">
+            <img [src]="book?.thumbnail" [alt]="book?.title" width="300" height="490">
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div>
+                <h2 class="fw-bold main-color">{{book?.title}}</h2>
+                <h5 class="fw-semibold secondary-color">{{book?.subTitle}}</h5>
+                <p class="text-dark fw-semibold mb-0">By Authors: <span class="text-secondary main-hover">
+                        {{book?.authors}}</span></p>
+                <p class="text-dark fw-semibold mb-0">Average Rate: <span class="text-secondary main-hover">
+                        {{book?.averageRating}}</span></p>
+                <p class="text-dark fw-semibold mb-0">Ratings Count: <span class="text-secondary main-hover">
+                        {{book?.ratingsCount}}</span></p>
+                <p class="text-dark fw-semibold mb-0">Category: <span class="text-secondary main-hover">
+                        {{book?.categories}}</span></p>
+                <p *ngIf="book?.availableNo>0" class="text-success fw-bold mb-0">Available</p>
+                <p *ngIf="!(book?.availableNo>0)" class="text-danger fw-bold mb-0">Not Available</p>
+            </div>
+            <div>
+                <div class="book-info d-block d-md-flex align-items-center mb-1">
+                    <div class="d-flex align-items-center">
+                    </div>
+                    <div class="d-flex align-items-center mt-2 mt-md-0">
+                        <i class="fa-solid fa-calendar-days main-color me-2"></i>
+                        <p class="fw-medium">{{book?.publishedYear}}</p>
+                        <i class="fa-solid fa-file main-color mx-2"></i>
+                        <p class="text-lowercase fw-medium">{{book?.pagesNo}} Papers</p>
+                    </div>
+                </div>
+                <div>
+                </div>
+                <p class="main-color fw-medium mb-0">{{book?.description}}</p>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-4 my-2" *ngIf="!isAddedSuccesfully">
+            <div class="d-flex flex-column pricing-card">
+                <div class="card-left w-100 d-flex justify-content-center">
+                    <p><span class="dollar">$</span>{{book?.price}}</p>
+                </div>
+                <div class="card-right">
+                    <h1>Features:</h1>
+                    <ul>
+                        <li>&mdash; Free Delivery Orders over 1000 EGP</li>
+                        <li>&mdash; Payment Cash on delivery</li>
+                    </ul>
+                    <div class="d-flex justify-content-center w-100">
+                        <button (click)="addCart()"  class="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="col-md-4">
+            <img [src]="book?.thumbnail" [alt]="book?.title" width="300" height="360">
+        </div> -->

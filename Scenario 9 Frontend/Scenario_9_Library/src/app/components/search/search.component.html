@@ -1,0 +1,56 @@
+<div class="py-5 d-flex align-items-center justify-content-around bg-secondary-subtle">
+    <h2 class="fw-bolder">Filtered Books</h2>
+    <div>
+        <a class="text-decoration-none cursor-pointer text-secondary fw-semibold" routerLink="/home">Home</a>
+        <span class="fw-semibold"> / Filter</span>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="d-flex align-items-center justify-content-between mb-2">
+        <div class="">
+            <p class="mb-0 d-inline fw-medium ps-1">Showing <span class="fw-bold">{{currentPageIndex ==
+                    1?1:(currentPageIndex-1)*20}} - {{TotalCount>=20?currentPageIndex * 20:TotalCount}} </span> of <span
+                    class="fw-bold">{{TotalCount}}</span></p>
+        </div>
+        <div *ngIf="isTotlaCountsLess20" class="d-flex justify-content-end ">
+            <nav>
+                <ul class="pagination">
+                    <li [class]="currentPageIndex != 1 ?'page-item':'page-item disabled'">
+                        <button class="page-link" (click)="PageandPaginationUpdate(currentPageIndex-1)">Previous</button>
+                    </li>
+                    <li *ngFor="let page of page_numbers" class="page-item">
+                        <button [class]="currentPageIndex == page?'page-link active':'page-link' "
+                            (click)="PageandPaginationUpdate(page)">{{page}}</button>
+                    </li>
+                    <li [class]="currentPageIndex != TotalPages ?'page-item':'page-item disabled'">
+                        <button class="page-link" (click)="PageandPaginationUpdate(currentPageIndex+1)">Next</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4" *ngFor="let book of Books">
+            <div class="card h-100 shadow-sm position-relative">
+                <div class="image position-relative" style="cursor: pointer;">
+                    <img src="{{book.thumbnail}}" alt="{{book.title}}" class="bg-info" width="100%" height="300px">
+                    <div class="d-flex align-items-center justify-content-center hover-overlay">
+                         <a type="button" [routerLink]="['/bookdetails/',book.id]" class="btn btn-primary mx-1"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-body d-flex flex-column mb-5">
+                    <a>
+                        <h6 class="title-style"> <a [routerLink]="['/bookdetails/',book.id]" class="mx-1 text-decoration-none" style="color: #012970;">{{book.title}}</a></h6>
+                    </a>
+                </div>
+                <div class="position-absolute" style="bottom: 10px; left: 16px;">
+                    <span class="text-secondary">{{book.authors.split(';')[0]}}</span>
+                    <br>
+                    <span class="mb-2 price">${{book.price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

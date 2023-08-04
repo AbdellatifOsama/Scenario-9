@@ -1,0 +1,27 @@
+:root {
+  --main-color: #012970;
+  --white-color: #fff;
+  --nav-active-color: #4154f1;
+  --main-btn-color: #4154f1;
+  --font-weight-700: 700;
+  --font-weight-600: 600;
+  --font-weight-500: 500;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Nunito", sans-serif !important;
+}
+a {
+  cursor: pointer;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.pagination {
+  margin: 0 !important;
+}
+.btn-primary {
+  background-color: var(--main-btn-color) !important;
+}

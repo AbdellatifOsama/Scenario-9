@@ -1,0 +1,28 @@
+.home-main-text {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.home-sub-text {
+    font-size: 26px;
+    font-weight: 500;
+    color: #444444;
+}
+.btn-get-started {
+    margin-top: 30px;
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: var(--white-color);
+    background: var(--main-btn-color);
+    box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+}
+.btn-get-started i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: all .3s ease-in;
+}
+.btn-get-started:hover i {
+    transform: translateX(6px);
+}

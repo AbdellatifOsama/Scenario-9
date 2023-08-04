@@ -1,0 +1,102 @@
+//Main Movie Details Styles
+.book-info p{
+    margin-bottom:0px !important ;
+}
+.book-info div:first-child p:first-child,.book-info div:first-child p:nth-child(2){
+    font-size: 12px;
+    font-weight: var(--font-weight-700);
+    letter-spacing: 1px;
+    margin-right: 8px;
+}
+.book-info div:first-child p:nth-child(3),.book-info div:first-child p:nth-child(4){
+    text-transform: capitalize;
+    margin: 0px 4px 0px 0px;
+    transition: all 0.5s;
+}
+.main-color{
+    color: var(--main-color);
+}
+.secondary-color{
+    color: var(--main-btn-color);
+}
+.main-hover{
+    transition: all .5s;
+}
+.main-hover:hover{
+    color: var(--nav-active-color) !important;
+}
+// Variables
+$main: var(--main-color);
+$second: var(--main-btn-color);
+
+// Card
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pricing-card {
+    font-family: 'Open Sans';
+    display: flex;
+    box-shadow: 8px 15px 30px 0 rgba(24, 28, 114, 0.15);
+}
+
+.card-left {
+    text-align: center;
+    background: linear-gradient(65deg, var(--main-color) , var(--main-btn-color));
+    color: #fff;
+    width: 30%;
+    padding: 35px 15px;
+    border-radius: 6px 0 0 6px;
+}
+
+.card-left h1 {
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    font-size: 24px;
+}
+
+.card-left p {
+    font-size: 60px;
+}
+
+.dollar {
+    font-size: 24px;
+    position: relative;
+    top: -26px;
+}
+
+.card-right {
+    text-align: left;
+    background: #fff;
+    color: $main;
+    border-radius: 0 6px 6px 0;
+    padding: 20px 40px;
+}
+
+.card-right h1 {
+    margin-bottom: 15px;
+    color: #292e31;
+    opacity: 0.9;
+}
+
+.card-right ul {
+    margin-bottom: 40px;
+}
+
+.card-right li {
+    padding-bottom: 6px;
+}
+
+.button {
+    text-decoration: none;
+    color: #fff;
+    background: $main;
+    padding: 20px 80px;
+    border-radius: 100px;
+    transition: all 500ms ease;
+}
+
+.button:hover {
+    background: $second;
+}

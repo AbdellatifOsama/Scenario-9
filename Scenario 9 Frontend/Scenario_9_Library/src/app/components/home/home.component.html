@@ -1,0 +1,31 @@
+<div class="home-main container mt-5">
+    <div class="row">
+        <div class="col-lg-6 my-auto">
+            <h1 class="home-main-text mb-3">
+                Our Library offer many Books for growing your Mind
+            </h1>
+            <h2 class="home-sub-text">
+                We have Various Types of Books 
+            </h2>
+            <div class="text-center text-lg-start">
+                <!-- @if (UserManager.IsSignedIn(User))
+                { -->
+                    <a asp-controller="Department" asp-action="Index" class="text-decoration-none btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                        <span class="me-1">Discover Our Books</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                <!-- } -->
+                <!-- else
+                {
+                    <a asp-controller="Account" asp-action="Login" class="text-decoration-none btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                        <span class="me-1">Get Started</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                } -->
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid ms-md-5" src="../../assets/Imgs/home-img.png" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+<div class="row justify-content-center align-items-center">
+
+    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+        <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign In</p>
+
+        <div *ngIf="!isformValid" class="alert alert-danger position-absolute top-0 start-50 translate-middle-x mt-4 alert-dismissible fade show"
+            role="alert" id="EmailError">
+            Email Address or Password iscorrect
+            <button style="box-shadow:none !important" type="button" class="btn-close border-0 btn-box-shadow-none"
+                data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <form [formGroup]="loginFormGroup" (submit)="login(loginFormGroup)">
+            <div class="d-flex align-items-center mb-3">
+                <div>
+                    <i class="fas fa-envelope fa-lg me-2 fa-fw opacity-50"></i>
+                </div>
+                <div class="form-floating w-100">
+                    <input class="form-control" id="floatingInput1" placeholder="name@example.com" formControlName="email">
+                    <label for="floatingInput1" class="fw-bold opacity-50">Email address</label>
+                </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+                <div>
+                    <i class="fas fa-lock fa-lg me-2 fa-fw opacity-50"></i>
+                </div>
+                <div class="form-floating w-100">
+                    <input type="password" class="form-control" id="floatingInput" placeholder="Password" formControlName="password">
+                    <label for="floatingInput" class="fw-bold opacity-50">Password</label>
+                </div>
+            </div>
+            <style>
+                .form-check-input:focus {
+                    outline: none !important;
+                    box-shadow: none;
+                }
+            </style>
+
+            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                <button type="submit" (click)="isformValid = loginFormGroup.valid" class="btn btn-primary px-3 mt-3">Sign In</button>
+            </div>
+        </form>
+        <div style="margin-left: 33px">
+            <p class="text-secondary">Don't have an Account?<a class="text-black text-decoration-none ms-2 fw-bold"
+                    routerLink="/auth/register">Sign up for Free</a></p>
+        </div>
+    </div>
+    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+        <img src="https://static.vecteezy.com/system/resources/previews/009/773/297/non_2x/people-are-reading-books-to-celebrate-international-literacy-day-on-the-8th-of-september-illustration-in-flat-style-vector.jpg"
+            class="img-fluid" alt="Sample image">
+    </div>
+    <!-- @section AccountLoginFailure
+{
+    <script>
+        $('#EmailError').delay(3000).fadeIn().delay(1500).fadeOut();
+    </script>
+} -->
+
+</div>
